@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عن الدليل - SVU</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon">🎓</span>
+        <span data-i18n="brand-name">دليل فعاليات SVU</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 ms-auto order-lg-last">
+        <button id="langToggle" title="Switch Language"><i class="bi bi-translate"></i> EN</button>
+        <button id="darkModeToggle" class="btn btn-sm"
+          style="background:rgba(255,255,255,0.15);color:white;border:none;border-radius:8px;width:36px;height:36px;">🌙</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i><span
+                data-i18n="nav-home">الرئيسية</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html"><i class="bi bi-calendar-event me-1"></i><span
+                data-i18n="nav-events">الفعاليات</span></a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-1"></i><span
+                data-i18n="nav-about">عن الدليل</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i><span
+                data-i18n="nav-contact">اتصل بنا</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mb-2">
+        <ol class="breadcrumb" style="font-size:.85rem;opacity:.7;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,.8);"
+              data-i18n="bc-home">الرئيسية</a></li>
+          <li class="breadcrumb-item active text-white" data-i18n="bc-about">عن الدليل</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-info-circle me-2"></i><span data-i18n="page-about-h1">عن الدليل</span></h1>
+      <p data-i18n="page-about-sub">تعرّف على رسالتنا، رؤيتنا، وفريق العمل</p>
+    </div>
+  </div>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title" data-i18n="about-who-title">من نحن؟</h2>
+            <p class="section-subtitle" data-i18n="about-who-sub">دليل فعاليات الجامعة الافتراضية السورية</p>
+            <p style="color:var(--text-mid);line-height:2;" data-i18n="about-p1">دليل فعاليات SVU هو منصة رقمية متكاملة
+              أطلقتها الجامعة الافتراضية السورية بهدف ربط طلابها بمجمل الأنشطة والفعاليات.</p>
+            <p style="color:var(--text-mid);line-height:2;" data-i18n="about-p2">يوفر الدليل تجربة بحث وتصفح سلسة
+              ومتجاوبة مع إمكانية التصفية حسب التصنيف والتاريخ والموقع.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-6">
+                <div class="p-3 rounded" style="background:#ede9fe;border-right:4px solid #7c3aed;">
+                  <div style="font-size:1.5rem;">🎯</div>
+                  <div class="fw-bold" style="color:#7c3aed;font-size:.9rem;" data-i18n="val-mission-title">رسالتنا
+                  </div>
+                  <div style="font-size:.82rem;color:var(--text-mid);" data-i18n="val-mission-desc">إيصال كل فعالية
+                    للشخص المناسب في الوقت المناسب</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded" style="background:#d1fae5;border-right:4px solid #059669;">
+                  <div style="font-size:1.5rem;">🌟</div>
+                  <div class="fw-bold" style="color:#059669;font-size:.9rem;" data-i18n="val-vision-title">رؤيتنا</div>
+                  <div style="font-size:.82rem;color:var(--text-mid);" data-i18n="val-vision-desc">أن نكون المرجع الأول
+                    لفعاليات التعليم العالي في سوريا</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded" style="background:#fef3c7;border-right:4px solid #d97706;">
+                  <div style="font-size:1.5rem;">🤝</div>
+                  <div class="fw-bold" style="color:#d97706;font-size:.9rem;" data-i18n="val-values-title">قيمنا</div>
+                  <div style="font-size:.82rem;color:var(--text-mid);" data-i18n="val-values-desc">الشفافية، الابتكار،
+                    الشراكة المجتمعية</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded" style="background:#dbeafe;border-right:4px solid #0284c7;">
+                  <div style="font-size:1.5rem;">📱</div>
+                  <div class="fw-bold" style="color:#0284c7;font-size:.9rem;" data-i18n="val-style-title">أسلوبنا</div>
+                  <div style="font-size:.82rem;color:var(--text-mid);" data-i18n="val-style-desc">تقنيات حديثة وتجربة
+                    مستخدم متميزة</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/SVU@.jpg" alt="university"
+              style="border-radius:20px;width:100%;box-shadow:0 16px 48px rgba(1, 68, 168, 0.2);" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background:white;">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title d-inline-block" data-i18n="stats-section-title">الجامعة بالأرقام</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-box fade-in stagger-1"><span class="stat-num">+120</span><span class="stat-label"
+                data-i18n="stat1-label">فعالية سنوياً</span></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box fade-in stagger-2"><span class="stat-num">+5000</span><span class="stat-label"
+                data-i18n="stat3-label">مشارك نشط</span></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box fade-in stagger-3"><span class="stat-num">+30</span><span class="stat-label"
+                data-i18n="stat4-label">شريك مؤسسي</span></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box fade-in stagger-4"><span class="stat-num">+15</span><span class="stat-label"
+                data-i18n="stat2-label">تصنيف متنوع</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title d-inline-block" data-i18n="team-title">فريق العمل</h2>
+          <p class="section-subtitle mt-2" data-i18n="team-sub">الفريق المتخصص خلف دليل الفعاليات</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="team-card fade-in stagger-1"><img src="assets/img/Photo4.jpg" alt="team" class="team-avatar" />
+              <div class="team-name" data-i18n="team1-name">م.بيان طافش </div>
+              <div class="team-role" data-i18n="team1-role">مدير الدليل</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="team-card fade-in stagger-2"><img src="assets/img/Photo3.jpg" alt="team" class="team-avatar" />
+              <div class="team-name" data-i18n="team2-name"> م.روزمعلولي</div>
+              <div class="team-role" data-i18n="team2-role">منسقة الفعاليات</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="team-card fade-in stagger-3"><img src="assets/img/personal1.jpg" alt="team"
+                class="team-avatar" />
+              <div class="team-name" data-i18n="team3-name"> م.ربيع سلايمة</div>
+              <div class="team-role" data-i18n="team3-role">مطور الموقع</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="team-card fade-in stagger-4"><img src="assets/img/Photo2.jpg" alt="team" class="team-avatar" />
+              <div class="team-name" data-i18n="team4-name">لارا القطامي  </div>
+              <div class="team-role" data-i18n="team4-role">مصممة واجهات</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="team-card fade-in stagger-5"><img src="assets/img/Photo1.jpg" alt="team" class="team-avatar" />
+              <div class="team-name" data-i18n="team5-name">  راما العرنجي</div>
+              <div class="team-role" data-i18n="team5-role">مديرة المحتوى</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background:white;">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title d-inline-block" data-i18n="policies-title">السياسات والمعايير</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card border-0 shadow-sm h-100" style="border-radius:14px;">
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-3" data-i18n="policy1-title">كيفية تقديم فعالية</h5>
+                <ul style="color:var(--text-mid);font-size:.9rem;line-height:2;padding-right:1rem;">
+                  <li data-i18n="policy1-1">تواصل مع فريق الدليل عبر صفحة "اتصل بنا"</li>
+                  <li data-i18n="policy1-2">أرفق ملف تعريفي كامل بالفعالية</li>
+                  <li data-i18n="policy1-3">انتظر مراجعة الطلب خلال 3-5 أيام عمل</li>
+                  <li data-i18n="policy1-4">ستتلقى رداً بالقبول أو طلب تعديلات</li>
+                  <li data-i18n="policy1-5">يتم النشر بعد موافقة لجنة الفعاليات</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card border-0 shadow-sm h-100" style="border-radius:14px;">
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-3" data-i18n="policy2-title">معايير النشر</h5>
+                <ul style="color:var(--text-mid);font-size:.9rem;line-height:2;padding-right:1rem;">
+                  <li data-i18n="policy2-1">الفعالية ذات طابع أكاديمي، ثقافي، رياضي، أو اجتماعي</li>
+                  <li data-i18n="policy2-2">لا تتعارض مع قيم الجامعة وقوانينها</li>
+                  <li data-i18n="policy2-3">تُنظَّم بمكان مناسب وآمن</li>
+                  <li data-i18n="policy2-4">يملك المنظِّم صلاحية قانونية لتنظيمها</li>
+                  <li data-i18n="policy2-5">يُقدَّم الطلب قبل موعد الفعالية بـ 14 يوماً</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="contact.html" class="btn-primary-custom" style="font-size:1rem;padding:.8rem 2.5rem;">
+            <i class="bi bi-send"></i> <span data-i18n="btn-submit-event">قدّم فعاليتك الآن</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand">🎓 <span data-i18n="footer-about-title">دليل فعاليات SVU</span></div>
+          <p class="footer-desc" data-i18n="footer-desc">منصة متكاملة لعرض وتتبع فعاليات الجامعة الافتراضية السورية.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <p class="footer-title" data-i18n="footer-links-title">روابط سريعة</p>
+          <ul class="footer-links">
+            <li><a href="index.html"><span data-i18n="nav-home">الرئيسية</span></a></li>
+            <li><a href="events.html"><span data-i18n="nav-events">الفعاليات</span></a></li>
+            <li><a href="about.html"><span data-i18n="nav-about">عن الدليل</span></a></li>
+            <li><a href="contact.html"><span data-i18n="nav-contact">اتصل بنا</span></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+        <p class="footer-title" data-i18n="STU-names">أسماء الطلاب مع الرقم الجامعي </p>
+        <ul class="footer-names">
+          <li><span data-i18n="name-1">بيان طافش - 295732</span></a></li>
+          <li><span data-i18n="name-2">لارا القطامي - 322709</span></a></li>
+          <li><span data-i18n="name-3">راما العرنجي - 156786</span></a></li>
+          <li><span data-i18n="name-4">روز معلولي - 322711</span></a></li>
+          <li><span data-i18n="name-5">ربيع سلايمة - 322707</span></a></li>
+        </ul>
+      </div>
+        <div class="col-6 col-md-4">
+          <p class="footer-title" data-i18n="footer-contact-title">تواصل معنا</p>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope ms-2"></i> events@svuonline.org</li>
+            <li><i class="bi bi-telephone ms-2"></i> +963 969 157 044</li>
+            <li><i class="bi bi-geo-alt ms-2"></i> <span data-i18n="loc-city">دمشق، سوريا</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer-copy">© 2026 الجامعة الافتراضية السورية — جميع الحقوق محفوظة</span>
+      </div>
+    </div>
+  </footer>
+  <button id="scrollTopBtn" title="العودة للأعلى"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اتصل بنا - SVU</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon">🎓</span>
+      <span data-i18n="brand-name">دليل فعاليات SVU</span>
+    </a>
+    <div class="d-flex align-items-center gap-2 ms-auto order-lg-last">
+      <button id="langToggle" title="Switch Language"><i class="bi bi-translate"></i> EN</button>
+      <button id="darkModeToggle" class="btn btn-sm" style="background:rgba(255,255,255,0.15);color:white;border:none;border-radius:8px;width:36px;height:36px;">🌙</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i><span data-i18n="nav-home">الرئيسية</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html"><i class="bi bi-calendar-event me-1"></i><span data-i18n="nav-events">الفعاليات</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i><span data-i18n="nav-about">عن الدليل</span></a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html"><i class="bi bi-envelope me-1"></i><span data-i18n="nav-contact">اتصل بنا</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-2">
+      <ol class="breadcrumb" style="font-size:.85rem;opacity:.7;">
+        <li class="breadcrumb-item"><a href="index.html" style="color:rgba(255,255,255,.8);" data-i18n="bc-home">الرئيسية</a></li>
+        <li class="breadcrumb-item active text-white" data-i18n="bc-contact">اتصل بنا</li>
+      </ol>
+    </nav>
+    <h1><i class="bi bi-envelope me-2"></i><span data-i18n="page-contact-h1">اتصل بنا</span></h1>
+    <p data-i18n="page-contact-sub">نحن هنا للمساعدة. تواصل معنا في أي وقت.</p>
+  </div>
+</div>
+
+<main class="py-5">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Form -->
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+          <h3 class="fw-bold mb-1" style="color:var(--primary);" data-i18n="form-send-title">أرسل رسالتك</h3>
+          <p class="text-muted mb-4" style="font-size:.9rem;" data-i18n="form-send-sub">سنردّ عليك خلال 24-48 ساعة عمل</p>
+
+          <div id="formSuccess" class="alert alert-success alert-dismissible" role="alert" style="display:none;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+          <div id="formError" class="alert alert-danger alert-dismissible" role="alert" style="display:none;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="inputName"><i class="bi bi-person me-1"></i><span data-i18n="form-name-lbl">الاسم الكامل</span> <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="inputName" data-i18n="form-name-ph" placeholder="أدخل اسمك الكامل" required />
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="form-label" for="inputEmail"><i class="bi bi-envelope me-1"></i><span data-i18n="form-email-lbl">البريد الإلكتروني</span> <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="example@email.com" required />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="inputSubject"><i class="bi bi-chat-dots me-1"></i><span data-i18n="form-subject-lbl">موضوع الرسالة</span></label>
+                <select class="form-select" id="inputSubject">
+                  <option value="" data-i18n="form-subj-def">اختر الموضوع</option>
+                  <option data-i18n="form-subj-1">استفسار عام</option>
+                  <option data-i18n="form-subj-2">تقديم فعالية جديدة</option>
+                  <option data-i18n="form-subj-3">الإبلاغ عن مشكلة</option>
+                  <option data-i18n="form-subj-4">شراكة ومؤسسات</option>
+                  <option data-i18n="form-subj-5">اقتراح وتعليق</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="inputMessage"><i class="bi bi-pencil me-1"></i><span data-i18n="form-msg-lbl">الرسالة</span> <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="inputMessage" rows="5" data-i18n="form-msg-ph" placeholder="اكتب رسالتك هنا..." required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check" style="font-size:.88rem;">
+                  <input class="form-check-input" type="checkbox" id="agreeCheck" />
+                  <label class="form-check-label text-muted" for="agreeCheck">
+                    <span data-i18n="form-agree">أوافق على</span>
+                    <a href="#" style="color:var(--primary);" data-i18n="form-privacy">سياسة الخصوصية</a>
+                    <span data-i18n="form-terms">وشروط الاستخدام</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100 justify-content-center py-3">
+                  <i class="bi bi-send"></i> <span data-i18n="btn-send-form">إرسال الرسالة</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="col-lg-5">
+        <h3 class="fw-bold mb-4" style="color:var(--primary);" data-i18n="contact-info-title">معلومات التواصل</h3>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="fw-bold mb-1" data-i18n="ci-email-title">البريد الإلكتروني</div>
+            <a href="mailto:events@svuonline.org" style="color:var(--primary);font-size:.9rem;">events@svuonline.org</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="fw-bold mb-1" data-i18n="ci-phone-title">الهاتف</div>
+            <div style="font-size:.9rem;color:var(--text-mid);">+963 969 157 044</div>
+            <div style="font-size:.85rem;color:var(--text-light);" data-i18n="ci-phone-hours">الأحد - الخميس، 9:00 - 17:00</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="fw-bold mb-1" data-i18n="ci-addr-title">العنوان</div>
+            <div style="font-size:.9rem;color:var(--text-mid);" data-i18n="org-name">الجامعة الافتراضية السورية</div>
+            <div style="font-size:.85rem;color:var(--text-light);" data-i18n="ci-addr-city">دمشق، سوريا</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="fw-bold mb-1" data-i18n="ci-hours-title">ساعات العمل</div>
+            <div style="font-size:.9rem;color:var(--text-mid);" data-i18n="ci-hours-1">الأحد - الخميس: 9:00 - 17:00</div>
+            <div style="font-size:.85rem;color:var(--text-light);" data-i18n="ci-hours-2">الجمعة والسبت: مغلق</div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="fw-bold mb-3" style="color:var(--primary);" data-i18n="social-follow-title">تابعنا على السوشيال ميديا</h5>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" class="d-flex align-items-center gap-2 px-3 py-2 fw-bold text-decoration-none" style="background:#1877f2;color:white;font-size:.85rem;border-radius:10px;"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="d-flex align-items-center gap-2 px-3 py-2 fw-bold text-decoration-none" style="background:#1da1f2;color:white;font-size:.85rem;border-radius:10px;"><i class="bi bi-twitter-x"></i> Twitter</a>
+            <a href="#" class="d-flex align-items-center gap-2 px-3 py-2 fw-bold text-decoration-none" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);color:white;font-size:.85rem;border-radius:10px;"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="d-flex align-items-center gap-2 px-3 py-2 fw-bold text-decoration-none" style="background:#0088cc;color:white;font-size:.85rem;border-radius:10px;"><i class="bi bi-telegram"></i> Telegram</a>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h5 class="fw-bold mb-3" style="color:var(--primary);" data-i18n="faq-title">أسئلة شائعة</h5>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-2" style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="font-family:'Cairo',sans-serif;font-weight:700;font-size:.9rem;background:white;color:var(--text-dark);" data-i18n="faq1-q">كيف أقدّم فعالية جديدة؟</button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="font-size:.88rem;color:var(--text-mid);" data-i18n="faq1-a">تواصل معنا عبر النموذج أعلاه أو عبر البريد الإلكتروني مع تفاصيل كاملة عن الفعالية.</div>
+              </div>
+            </div>
+            <div class="accordion-item mb-2" style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="font-family:'Cairo',sans-serif;font-weight:700;font-size:.9rem;background:white;color:var(--text-dark);" data-i18n="faq2-q">هل النشر مجاني؟</button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="font-size:.88rem;color:var(--text-mid);" data-i18n="faq2-a">نعم، النشر مجاني تماماً لجميع الجهات الأكاديمية والطلابية.</div>
+              </div>
+            </div>
+            <div class="accordion-item" style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="font-family:'Cairo',sans-serif;font-weight:700;font-size:.9rem;background:white;color:var(--text-dark);" data-i18n="faq3-q">كم يستغرق مراجعة الطلب؟</button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="font-size:.88rem;color:var(--text-mid);" data-i18n="faq3-a">تستغرق مراجعة الطلبات من 3 إلى 5 أيام عمل.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="footer-brand">🎓 <span data-i18n="footer-about-title">دليل فعاليات SVU</span></div>
+        <p class="footer-desc" data-i18n="footer-desc">منصة متكاملة لعرض وتتبع فعاليات الجامعة الافتراضية السورية.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-4">
+        <p class="footer-title" data-i18n="footer-links-title">روابط سريعة</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><span data-i18n="nav-home">الرئيسية</span></a></li>
+          <li><a href="events.html"><span data-i18n="nav-events">الفعاليات</span></a></li>
+          <li><a href="about.html"><span data-i18n="nav-about">عن الدليل</span></a></li>
+          <li><a href="contact.html"><span data-i18n="nav-contact">اتصل بنا</span></a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4">
+        <p class="footer-title" data-i18n="footer-contact-title">تواصل معنا</p>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope ms-2"></i> events@svuonline.org</li>
+          <li><i class="bi bi-telephone ms-2"></i> +963 969 157 044</li>
+          <li><i class="bi bi-geo-alt ms-2"></i> <span data-i18n="loc-city">دمشق، سوريا</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer-copy">© 2026 الجامعة الافتراضية السورية — جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+</footer>
+<button id="scrollTopBtn" title="العودة للأعلى"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

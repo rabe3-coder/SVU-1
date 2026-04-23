@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دليل فعاليات الجامعة الافتراضية - SVU</title>
+  <!-- Bootstrap 5 RTL CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-icon">🎓</span>
+      <span data-i18n="brand-name">دليل فعاليات SVU</span>
+    </a>
+    <div class="d-flex align-items-center gap-2 ms-auto order-lg-last">
+      <button id="langToggle" title="Switch Language"><i class="bi bi-translate"></i> EN</button>
+      <button id="darkModeToggle" class="btn btn-sm" style="background:rgba(255,255,255,0.15);color:white;border:none;border-radius:8px;width:36px;height:36px;" title="وضع مظلم">🌙</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-fill me-1"></i><span data-i18n="nav-home">الرئيسية</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html"><i class="bi bi-calendar-event me-1"></i><span data-i18n="nav-events">الفعاليات</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i><span data-i18n="nav-about">عن الدليل</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i><span data-i18n="nav-contact">اتصل بنا</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO SLIDER
+══════════════════════════════════════════ -->
+<section class="hero-section">
+  <div class="container">
+    <div class="events-slider">
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-content">
+          <span class="slide-badge" data-i18n="slide1-badge">🔴 مميز هذا الأسبوع</span>
+          <h2 data-i18n="slide1-title">ندوة القيادة وتطوير مهارات الشخصية</h2>
+          <p data-i18n="slide1-desc">تعلم تقنيات الظهور والتأثير لتحسين أداءك في البيئة المهنية.</p>
+          <div class="slide-meta">
+            <span><i class="bi bi-calendar3"></i> <span data-i18n="slide1-date">20 أبريل 2026</span></span>
+            <span><i class="bi bi-geo-alt"></i> <span data-i18n="slide1-place">القاعة الرئيسية، دمشق</span></span>
+            <span><i class="bi bi-people"></i> <span data-i18n="slide1-count">500+ مشارك</span></span>
+          </div>
+          <a href="event.html?id=ev2" class="btn-primary-custom me-2">
+            <i class="bi bi-arrow-left-circle"></i>
+            <span data-i18n="btn-details">عرض التفاصيل</span>
+          </a>
+          <a href="events.html" class="btn-secondary-custom" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.4);">
+            <span data-i18n="btn-all-events">كل الفعاليات</span>
+          </a>
+        </div>
+        <div class="slide-img">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="conference" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-content">
+          <span class="slide-badge" data-i18n="slide2-badge" style="background:#059669;">  💻تقنية </span>
+          <h2 data-i18n="slide2-title">لقاء مطوري البرمجيات</h2>
+          <p data-i18n="slide2-desc">انضم إلينا للاستفادة من خبرات مطوري البرمجيات في مجالات مختلفة.</p>
+          <div class="slide-meta">
+            <span><i class="bi bi-calendar3"></i> <span data-i18n="slide2-date">25 أبريل 2026</span></span>
+            <span><i class="bi bi-geo-alt"></i> <span data-i18n="slide2-place">المسرح الوطني</span></span>
+            <span><i class="bi bi-ticket"></i> <span data-i18n="slide2-ticket">دخول مجاني</span></span>
+          </div>
+          <a href="event.html?id=ev3" class="btn-primary-custom me-2" style="background:linear-gradient(135deg,#059669,#047857);">
+            <i class="bi bi-arrow-left-circle"></i>
+            <span data-i18n="btn-details">عرض التفاصيل</span>
+          </a>
+        </div>
+        <div class="slide-img">
+          <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80" alt="music" />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-content">
+          <span class="slide-badge" data-i18n="slide3-badge" style="background:#d97706;">  🎓 تقنية </span>
+          <h2 data-i18n="slide3-title">هاكاثون البرمجة </h2>
+          <p data-i18n="slide3-desc">تحدي برمجي ممتع يجمع أفضل المبرمجين من مختلف الجامعات لحل مشاكل حقيقية في وقت قصير.</p>
+          <div class="slide-meta">
+            <span><i class="bi bi-calendar3"></i> <span data-i18n="slide3-date">1 - 10 مايو 2026</span></span>
+            <span><i class="bi bi-geo-alt"></i> <span data-i18n="slide3-place">الملعب الأولمبي</span></span>
+            <span><i class="bi bi-trophy"></i> <span data-i18n="slide3-type">بطولة دولية</span></span>
+          </div>
+          <a href="event.html?id=ev4" class="btn-primary-custom me-2" style="background:linear-gradient(135deg,#d97706,#b45309);">
+            <i class="bi bi-arrow-left-circle"></i>
+            <span data-i18n="btn-details">عرض التفاصيل</span>
+          </a>
+        </div>
+        <div class="slide-img">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80" alt="football" />
+        </div>
+      </div>
+
+    </div><!-- /events-slider -->
+    <div class="slider-controls">
+      <button class="slider-btn" id="sliderPrev"><i class="bi bi-chevron-right"></i></button>
+      <div class="slider-dots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+      <button class="slider-btn" id="sliderNext"><i class="bi bi-chevron-left"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CATEGORIES
+══════════════════════════════════════════ -->
+<section class="categories-section">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center">
+      <span class="fw-bold text-muted me-2" style="font-size:.9rem;" data-i18n="cat-label">تصفح حسب:</span>
+      <button class="category-btn active"         data-cat="all"     data-i18n="cat-all">🌐 الكل</button>
+      <button class="category-btn cat-culture"    data-cat="culture" data-i18n="cat-culture">🎭 ثقافة</button>
+      <button class="category-btn cat-sports"     data-cat="sports"  data-i18n="cat-sports">⚽ ترفيهية </button>
+      <button class="category-btn cat-music"      data-cat="music"   data-i18n="cat-music">🎵 موسيقى</button>
+      <button class="category-btn cat-family"     data-cat="family"  data-i18n="cat-family">👨‍👩‍👧 عائلي</button>
+      <button class="category-btn cat-tech"       data-cat="tech"    data-i18n="cat-tech">💻 تقنية</button>
+      <button class="category-btn cat-art"        data-cat="art"     data-i18n="cat-art">🎨 فنون</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     LATEST EVENTS
+══════════════════════════════════════════ -->
+<main>
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <h2 class="section-title" data-i18n="sec-latest-title">أحدث الفعاليات</h2>
+        <p class="section-subtitle" data-i18n="sec-latest-sub">اكتشف الفعاليات المضافة حديثاً</p>
+      </div>
+      <a href="events.html" class="btn-secondary-custom">
+        <span data-i18n="btn-view-all">عرض الكل</span> <i class="bi bi-arrow-left"></i>
+      </a>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Card 1 – Tech -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-1">
+        <div class="event-card filterable-card" data-category="tech">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="workshop" />
+            <span class="event-card-badge badge badge-tech" data-i18n="badge-tech">💻 تقنية</span>
+            <span class="today-badge" data-i18n="today-label">اليوم</span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card1-title">ورشة تطوير تطبيقات الموبايل </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card1-date">11 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card1-place">قاعة التقنية، المبنى أ</span></span>
+            </div>
+            <p class="event-description" data-i18n="card1-desc">تدريب عملي لتطوير تطبيقات الموبايل باستخدام أحدث التقنيات.</p>
+            <a href="event.html?id=ev1" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 – Culture -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-2">
+        <div class="event-card filterable-card" data-category="culture">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&q=80" alt="arts" />
+            <span class="event-card-badge badge badge-culture" data-i18n="badge-culture">🎭 ثقافة</span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card2-title">مؤتمر الذكاء الاضطناعي </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card2-date">15 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card2-place">قاعة المعارض، دمشق</span></span>
+            </div>
+            <p class="event-description" data-i18n="card2-desc">فعالية تجمع خبراء في الذكاء الاصطناعي لمناقشة احدث التطورات مثل التعلم العميق ومعالجة اللغة الطبيعية </p>
+            <a href="event.html?id=ev5" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 – Sports -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-3">
+        <div class="event-card filterable-card" data-category="sports">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80" alt="sports" />
+            <span class="event-card-badge badge badge-sports" data-i18n="badge-sports">⚽ ترفيهية </span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card3-title">بطولة الالعاب الالكترونية </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card3-date">18 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card3-place">مركز الألعاب الإلكترونية</span></span>
+            </div>
+            <p class="event-description" data-i18n="card3-desc">منافسات في العاب مثل FIFA , CAll Of Duty ,Pubg Mopile </p>
+            <a href="event.html?id=ev8" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 – Music -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-1">
+        <div class="event-card filterable-card" data-category="music">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80" alt="music" />
+            <span class="event-card-badge badge badge-music" data-i18n="badge-music">🎵 موسيقى</span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card4-title">مهرجان الموسيقى السنوي </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card4-date">22 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card4-place">المسرح الجامعي الكبير</span></span>
+            </div>
+            <p class="event-description" data-i18n="card4-desc">ليلة موسيقية استثنائية تجمع أمهر العازفين والمطربين في أجواء من الفن الأصيل والتراث العربي العريق</p>
+            <a href="event.html?id=ev3" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 – Family -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-2">
+        <div class="event-card filterable-card" data-category="family">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="family" />
+            <span class="event-card-badge badge badge-family" data-i18n="badge-family">👨‍👩‍👧 عائلي</span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card5-title">مهرجان العائلة المفتوح </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card5-date">28 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card5-place">حديقة تشرين العامة</span></span>
+            </div>
+            <p class="event-description" data-i18n="card5-desc">فعالية تشمل العاب اطفال , عروض مسرحية , أكشاك طعام , وأنشطة ترفيهية تناسب جميع الأعمار.</p>
+            <a href="event.html?id=ev6" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 – Art -->
+      <div class="col-12 col-sm-6 col-lg-4 fade-in stagger-3">
+        <div class="event-card filterable-card" data-category="art">
+          <div class="event-card-img">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80" alt="art" />
+            <span class="event-card-badge badge badge-art" data-i18n="badge-art">🎨 فنون</span>
+          </div>
+          <div class="event-card-body">
+            <h5 data-i18n="card6-title">يوم المواهب والفنون </h5>
+            <div class="event-meta">
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="card6-date">30 أبريل 2026</span></span>
+              <span><i class="bi bi-geo-alt"></i> <span data-i18n="card6-place">استوديو الفنون، الطابق 2</span></span>
+            </div>
+            <p class="event-description" data-i18n="card6-desc">حدث فني متنوع يضم معارض وورش عمل وعروض ترفيهية.</p>
+            <a href="event.html?id=ev5" class="btn-primary-custom w-100 justify-content-center">
+              <i class="bi bi-eye"></i> <span data-i18n="btn-view-detail">التفاصيل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <div class="text-center mt-5">
+      <a href="events.html" class="btn-primary-custom" style="font-size:1rem;padding:.8rem 2.5rem;">
+        <i class="bi bi-calendar-week"></i>
+        <span data-i18n="btn-all-events2">عرض جميع الفعاليات</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     STATS
+══════════════════════════════════════════ -->
+<section class="py-5" style="background:white;">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-box fade-in stagger-1">
+          <span class="stat-num">+120</span>
+          <span class="stat-label" data-i18n="stat1-label">فعالية مسجلة</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box fade-in stagger-2">
+          <span class="stat-num">+15</span>
+          <span class="stat-label" data-i18n="stat2-label">تصنيف متنوع</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box fade-in stagger-3">
+          <span class="stat-num">+5000</span>
+          <span class="stat-label" data-i18n="stat3-label">مشارك نشط</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box fade-in stagger-4">
+          <span class="stat-num">+30</span>
+          <span class="stat-label" data-i18n="stat4-label">شريك جامعي</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="footer-brand">🎓 <span data-i18n="footer-about-title">دليل فعاليات SVU</span></div>
+        <p class="footer-desc" data-i18n="footer-desc">منصة متكاملة لعرض وتتبع فعاليات الجامعة الافتراضية السورية، تهدف إلى ربط طلاب الجامعة بالأنشطة والفعاليات المتنوعة.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <p class="footer-title" data-i18n="footer-links-title">روابط سريعة</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="bi bi-chevron-left ms-1"></i><span data-i18n="nav-home">الرئيسية</span></a></li>
+          <li><a href="events.html"><i class="bi bi-chevron-left ms-1"></i><span data-i18n="nav-events">الفعاليات</span></a></li>
+          <li><a href="about.html"><i class="bi bi-chevron-left ms-1"></i><span data-i18n="nav-about">عن الدليل</span></a></li>
+          <li><a href="contact.html"><i class="bi bi-chevron-left ms-1"></i><span data-i18n="nav-contact">اتصل بنا</span></a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <p class="footer-title" data-i18n="footer-contact-title">تواصل معنا</p>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope ms-2"></i> events@svuonline.org</li>
+          <li><i class="bi bi-telephone ms-2"></i> +963 969 157 044</li>
+          <li><i class="bi bi-geo-alt ms-2"></i> <span data-i18n="loc-city">دمشق، سوريا</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer-copy">© 2026 الجامعة الافتراضية السورية — جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTopBtn" data-i18n-title="scroll-top-title" title="العودة للأعلى"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
